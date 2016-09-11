@@ -1,0 +1,30 @@
+{{ partial "header.html" . }}
+		{{ `<!-- MegaWorld Theme v1 combat single.html -->` | safeHTML }}
+
+		<main id="main_content" class="grid" role="main">
+			<header>
+				<h1>{{ .Title }}</h1>
+			</header>
+			
+			{{ .Content }}
+
+
+{{ partial "table.html" .Site.Data.combat.equipment.armor.table }}
+
+			<p>
+				{{ .Site.Data.combat.equipment.armor.footer}}
+			</p>
+
+{{ partial "table.html" .Site.Data.combat.equipment.weapons.modern.table }}
+{{ partial "table.html" .Site.Data.combat.equipment.weapons.ancient.table }}
+{{ with .Site.Data.combat.equipment.links }}
+			<h3>Reference List</h3>
+			<ul>
+				{{ range sort . }}
+				<li><a href="{{ .url }}">{{ .name }}</a></li>
+				{{ end }}
+			</ul>
+{{ end }}
+		</main>
+
+{{ partial "footer.html" . }}

@@ -1,0 +1,402 @@
+armor:
+  footer: Armor is encumbering. Shields require power.
+  table:
+    id: "combat_armor"
+    class: "combat armor"
+    capt: Combat Armor
+    thead:
+      - class: name
+        data: Armor Type
+      - class: val
+        data: AC
+      - class: val
+        data: DR
+      - class: note
+        data: Notes
+    tbody:
+      - row:
+        - data: Cloth Armor
+        - data: 0
+        - data: 1
+        - data: Bullet proof t-shirt
+      - row:
+        - data: Heavy Cloth Armor
+        - data: 1
+        - data: 1
+        - data: Light bullet proof armor
+      - row:
+        - data: Light Armor
+        - data: 2
+        - data: 1
+        - data: Typically of leather or advanced materials.
+      - row:
+        - data: Medium Armor
+        - data: 3
+        - data: 2
+        - data: +1 to TN due to encomberence
+      - row:
+        - data: Heavy Armor
+        - data: 4
+        - data: 3
+        - data: +2 to TN due to encomberence
+      - row:
+        - data: Power Armor
+        - data: 4
+        - data: 4
+        - data: +1 to Build
+      - row:
+        - data: Light Shields
+        - data: 1
+        - data: 1
+        - data: ""
+      - row:
+        - data: Medium Shields
+        - data: 2
+        - data: 2
+        - data: ""
+      - row:
+        - data: Heavy Shields
+        - data: 3
+        - data: 3
+        - data: ""
+weapons:
+  modern:
+    table:
+      id: "modern_weapons"
+      class: "combat modern weapons"
+      capt: Modern Weapons
+      thead:
+        - class: name
+          data: Weapon
+        - class: val
+          data: DMG
+        - class: val
+          data: RNG
+        - class: val ammo
+          data: Ammo
+        - class: note
+          data: Notes
+      tbody:
+        - row:
+          - class: name
+            data: '"Derringer"'
+          - class: val
+            data: 3
+          - class: val
+            data: 6
+          - class: val
+            data: 2
+          - class: note
+            data: ""
+        - row:
+          - data: 'Compact'
+          - data: 3
+          - data: 25
+          - data: 10
+          - data: '.380 ACP, .40 S&W. etc.'
+        - row: 
+          - data: 'Sm. Handgun'
+          - data: 2
+          - data: 30
+          - data: 14
+          - data: '.22 Short – .38 Special'
+        - row: 
+          - data: Md. Handgun
+          - data: 4
+          - data: 40
+          - data: 12 / 6
+          - data: .45 ACP / .357 Magnum
+        - row: 
+          - data: Lg. Handgun
+          - data: 5
+          - data: 80
+          - data: 8 / 6
+          - data: .44 Magnum, etc. Auto / Revolver. Min. Build 3
+        - row: 
+          - data: XL Handgun
+          - data: 6
+          - data: 100
+          - data: 5 / 7
+          - data: Casull .454 / .50 AE. Min. Build 4
+        - row: 
+          - data: Carbine
+          - data: 4
+          - data: 100
+          - data: 10
+          - data: Smaller, more portable rifle.
+        - row: 
+          - data: Rifle
+          - data: 5
+          - data: 200
+          - data: 8
+          - data: ''
+        - row: 
+          - data: Hunting Rifle
+          - data: 6
+          - data: 300
+          - data: 6
+          - data: ''
+        - row: 
+          - data: Assault Rifle
+          - data: 6
+          - data: 25
+          - data: 20
+          - data: Burst & Full Auto modes.
+        - row: 
+          - data: Sniper Rifle
+          - data: 10
+          - data: 500
+          - data: 5
+          - data: +5 to hit after 1 turn of aiming.
+        - row: 
+          - data: '<abbr title="Submachinegun">SMG</abbr>'
+          - data: 3
+          - data: 15
+          - data: 30
+          - data: Burst & Full Auto modes.
+        - row: 
+          - data: Machinegun
+          - data: 7
+          - data: 50
+          - data: 50
+          - data: Burst & Full Auto modes. Min. Build 3
+        - row: 
+          - data: 12g Shotgun – 00
+          - data: 7
+          - data: 10
+          - data: 6
+          - data: +3 to DMG or Accuracy. Light Aromor + negates damage.
+        - row: 
+          - data: 12g Shotgun – Slug
+          - data: 10
+          - data: 20
+          - data: 6
+          - data: ''
+        - row: 
+          - data: 12g Shotgun – Sabot
+          - data: 10
+          - data: 30
+          - data: 6
+          - data: ''
+        - row: 
+          - data: Laser Pistol
+          - data: 5
+          - data: 50
+          - data: 10
+          - data: ''
+        - row: 
+          - data: Laser Rifle
+          - data: 7
+          - data: 80
+          - data: 10
+          - data: ''
+        - row: 
+          - data: Laser Cannon
+          - data: 10
+          - data: 500
+          - data: 40
+          - data: Ship mounted weapon
+        - row: 
+          - data: Plasma Pistol
+          - data: 6
+          - data: 40
+          - data: 10
+          - data: ''
+        - row: 
+          - data: Plasma Rifle
+          - data: 8
+          - data: 60
+          - data: 10
+          - data: ''
+        - row: 
+          - data: Plasma Cannon
+          - data: 10
+          - data: 400
+          - data: 40
+          - data: Ship mounted weapon
+        - row: 
+          - data: Gauss Pistol
+          - data: 5
+          - data: 50
+          - data: 20
+          - data: ''
+        - row: 
+          - data: Railgun
+          - data: 8
+          - data: 500
+          - data: 30
+          - data: Rifle
+        - row: 
+          - data: _Banshee_
+          - data: 6
+          - data: 60
+          - data: 50
+          - data: Burst & Full Auto modes. SMG Railgun
+        - row: 
+          - data: _Spector_
+          - data: 5 / 10
+          - data: 300 / 10
+          - data: 200 / 3
+          - data: Burst & Full Auto modes. Assault Rifle Railgun/Grenade Launcher.
+        - row: 
+          - data: _Zeus_
+          - data: 10
+          - data: 1000
+          - data: 10
+          - data: +5 to hit after 1 turn of aiming. Sniper Railgun.
+  ancient:
+    table:
+      id: ancient_weapons
+      class: combat ancient weapons
+      capt: Ancient Weapons
+      thead:
+        - class: name
+          data: Melee Weapon
+        - class: val
+          data: DMG
+        - class: val
+          data: RNG
+        - class: note
+          data: Notes
+      tbody:
+        - row:
+          - data: Knife
+          - data: B +2
+          - data: 4
+          - data: ""
+        - row:
+          - data: Hunting Knife
+          - data: B +3
+          - data: 3
+          - data: ""
+        - row:
+          - data: Shortsword
+          - data: B +4
+          - data: 2
+          - data: ""
+        - row:
+          - data: Longsword
+          - data: B +5
+          - data: 1
+          - data: RNG = Reach
+        - row:
+          - data: Bastard
+          - data: B +5/+6
+          - data: 1
+          - data: RNG = Reach. 1 handed / 2 handed.
+        - row:
+          - data: Claymore
+          - data: B +6
+          - data: 2
+          - data: RNG = Reach. 2 handed only.
+        - row:
+          - data: Viahander
+          - data: B +7
+          - data: 3
+          - data: RNG = Reach. 2 handed only. Swinging uses 2 actions.
+        - row:
+          - data: Spear
+          - data: B +5
+          - data: 4 / 6
+          - data: Reach / RNG. 2 handed only.
+        - row:
+          - data: Halberd
+          - data: B +4/+8
+          - data: 5
+          - data: Thrusting/Swinging. 2 handed only. Swinging uses 2 actions.
+        - row:
+          - data: Pike
+          - data: B +6
+          - data: 6
+          - data: RNG = Reach. 2 handed only.
+        - row:
+          - data: Missile Weapons
+            tag: th
+          - data: DMG
+            tag: th
+          - data: RNG
+            tag: th
+          - class: note
+            data: Notes
+            tag: th
+        - row:
+          - data: Throwing Knife
+          - data: R +1
+          - data: 8
+          - data: ""
+        - row:
+          - data: Darts
+          - data: R +2
+          - data: 12
+          - data: ""
+        - row:
+          - data: Javalin
+          - data: B +4
+          - data: 10
+          - data: ""
+        - row:
+          - data: Sling
+          - data: R
+          - data: 400
+          - data: 2 actions to use.
+        - row:
+          - data: Hand Crossbow
+          - data: 2
+          - data: 40
+          - data: Can be held indefinately.
+        - row:
+          - data: Light Crossbow
+          - data: 3
+          - data: 60
+          - data: Can be held indefinately.
+        - row:
+          - data: Heavy Crossbow
+          - data: 5
+          - data: 80
+          - data: Can be held indefinately. Build 3 minimum.
+        - row:
+          - data: 'Arbalest "Crank" Crossbow'
+          - data: 8
+          - data: 100
+          - data: Can be held indefinately. Build 4 minimum. 2 actions to crank.
+        - row:
+          - data: Composite Bow
+          - data: B +3
+          - data: 145
+          - data: Ideal for shooting from horse back.
+        - row:
+          - data: Compound Bow
+          - data: B +3
+          - data: 50 / 500
+          - data: Effective / Max Range. Can be held indefinately.
+        - row:
+          - data: Hunting Bow
+          - data: B +3
+          - data: 50
+          - data: ""
+        - row:
+          - data: Short Bow
+          - data: B
+          - data: 30
+          - data: ""
+        - row:
+          - data: Longbow
+          - data: B +2
+          - data: 100
+          - data: ""
+        # - row:
+        #   - data: ____
+        #   - data: 
+        #   - data: 
+        #   - data: ____
+links:
+  - name: Sling - Wikipedia
+    url: "https://en.wikipedia.org/wiki/Sling_(weapon)"
+  - name: Composite Bow - Wikipedia
+    url: "https://en.wikipedia.org/wiki/Composite_bow"
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+spells:
+  - sphere: Matter
+    data:
+    - name: Enchant Object
+      desc: Prepare an item for enchantment. The the appropriate spells must be cast into it.
+      requ: 2
+    - name: Enhance Attribute
+      desc: Successes determine temporary CP for raising the attribute.
+      requ: 1
+  - sphere: Flow
+    data:
+    - name: Gate
+      desc: Successes determine range, duration, size and power.
+      requ: 3
+    - name: Slow Time
+      desc: Successes determine range, targets/area and power.
+      requ: 2
+  - sphere: Mind
+    data:
+    - name: Animate Object
+      desc: Give an object a "life" of it's own. Used to create subserviant furniture and willful weapons. Successes are used as CP to determine the Intellect of the object.
+      requ: 3
+    - name: Telepathy
+      desc: Successes determine range, targets and power.
+      requ: 2
+  - sphere: Energy
+    data:
+    - name: Fireball
+      desc: Successes determine range, explosion radius (area) and damage.
+      requ: 3
+    - name: Flame Jet
+      desc: Successes determine range and damage.
+      requ: 3
+  - sphere: Prime
+    data:
+    - name: Charge Object
+      desc: Final step in echanting an object is to give it the charges necessary to cast the spells embued to it. Or used to recharge an item.
+      requ: 2
+    - name: Dispell Spirit
+      desc: Successes determine range, targets and power.
+      requ: 2
+    # - name: ____
+    #   desc: ____
+    #   requ: 0

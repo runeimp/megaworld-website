@@ -1,0 +1,10 @@
+			<!--
+				Flash Satay http://alistapart.com/article/flashsatay
+				c.swf is a container SWF to get around IE's behavoir of
+				only streaming a SWF after it's completely loaded.
+				_root.loadMovie(_root.path,0);
+			-->
+			<object type="application/x-shockwave-flash" data="/c.swf?path={{ .flash.src }}" width="{{ .flash.width }}" height="{{ .flash.height }}">
+				<param name="movie" value="/c.swf?path={{ .flash.src }}" />
+{{ with .image.src }}				<img src="{{ . }}" width="{{ .image.width }}" height="{{ .image.height }}" alt="{{ .image.alt }}" />
+{{ end }}			</object>

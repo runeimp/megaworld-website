@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{{ `<!--[if lt IE 7 ]> <html lang="en-US" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en-US" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-US" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-US" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="us-en" class="no-js"> <!--<![endif]-->` | safeHTML }}
+	<head>
+		{{ `<!-- MegaWorld Theme v1 Partial header.html -->` | safeHTML }}
+		<meta charset="UTF-8" />
+
+		<title>{{ if eq .Title .Site.Title }}{{ .Title }}{{ else }}{{ .Title }} &middot; {{ .Site.Title }}{{ end }}</title>
+
+		<meta name="description" content="{{ if isset .Site.Params "description" }}{{ index .Site.Params "description" }}{{ else }}{{ .Description }}{{ end }}">
+
+		<meta name="twitter:card" content="summary">{{ with .Site.Params.twitter }}
+		<meta name="twitter:site" content="{{ . }}" />{{ end }}
+		<meta name="twitter:title" content="{{ if eq .Title .Site.Title }}{{ .Title }}{{ else }}{{ .Title }} &middot; {{ .Site.Title }}{{ end }}">
+		<meta name="twitter:description" content="{{ if isset .Site.Params "description" }}{{ index .Site.Params "description" }}{{ else }}{{ .Description }}{{ end }}">
+
+		<meta property="og:type" content="article">
+		<meta property="og:title" content="{{ if eq .Title .Site.Title }}{{ .Title }}{{ else }}{{ .Title }} &middot; {{ .Site.Title }}{{ end }}">
+		<meta property="og:description" content="{{ if isset .Site.Params "description" }}{{ index .Site.Params "description" }}{{ else }}{{ .Description }}{{ end }}">
+
+		{{ .Hugo.Generator }}
+
+		<link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}MegaWorld.css" media="all" />
+	</head>
+	<body{{ with .Params.body.id }} id="{{ . }}"{{ end }}{{ with .Params.body.class }} class="{{ . }}"{{ end }}{{ with .Params.body.style }} style="{{ . }}"{{ end }}>
+		<aside id="page_sidebar">
+			<h3>Contents:</h3>
+{{ partial "nav-main-desktop.html" . }}
+{{ with .Params.sidebar }}
+				{{ . }}
+{{ end }}
+			{{ .Site.Copyright | safeHTML }}
+		</aside>
+
+		<header id="page_header">
+			<img src="/pix/MegaWorldTitle_1200x96.png" width="600" alt="MegaWorld" />
+		</header>

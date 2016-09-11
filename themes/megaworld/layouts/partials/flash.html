@@ -1,0 +1,23 @@
+<!--
+	@see https://helpx.adobe.com/flash/kb/flash-object-embed-tag-attributes.html
+-->
+			<object {{ with .flash.id }}id="{{ . }}" {{ end }} {{ with .flash.class }}class="{{ . }}" {{ end }}type="application/x-shockwave-flash" data="{{ .flash.src }}" width="{{ .flash.width }}" height="{{ .flash.height }}">
+				<param name="movie" value="{{ .flash.src }}" />
+{{ with .flash.allowfullscreen }}				<param name="allowfullscreen" value="{{ . }}" /><!-- true/false -->
+{{ end }}{{ with .flash.align }}				<param name="align" value="{{ . }}" /><!-- l (left), r (right), t (top), tl (top left), tr (top right) -->
+{{ end }}{{ with .flash.allowscriptaccess }}				<param name="allowscriptaccess" value="{{ . }}" />
+{{ end }}{{ with .flash.base }}				<param name="base" value="{{ . }}" /><!-- Base path for relative paths -->
+{{ end }}{{ with .flash.bgcolor }}				<param name="bgcolor" value="{{ . }}" />
+{{ end }}{{ with .flash.browserzoom }}				<param name="browserzoom" value="{{ . }}" /><!-- scale/noscale -->
+{{ end }}{{ with .flash.flashvars }}				<param name="flashvars" value="{{ . }}" />
+{{ end }}{{ with .flash.fullScreenAspectRatio }}				<param name="fullScreenAspectRatio" value="{{ . }}" /><!-- portrait/landscape -->
+{{ end }}{{ with .flash.loop }}				<param name="loop" value="{{ . }}" />
+{{ end }}{{ with .flash.menu }}				<param name="menu" value="{{ . }}" /><!-- true/false -->
+{{ end }}{{ with .flash.play }}				<param name="play" value="{{ . }}" /><!-- true/false -->
+{{ end }}{{ with .flash.quality }}				<param name="quality" value="{{ . }}" /><!-- low, autolow, autohigh, medium, high, best -->
+{{ end }}{{ with .flash.salign }}				<param name="salign" value="{{ . }}" /><!-- l (left), r (right), t (top), tl (top left), tr (top right) -->
+{{ end }}{{ with .flash.scale }}				<param name="scale" value="{{ . }}" /><!-- default (show all), noborder, exactfit, noscale -->
+{{ end }}{{ with .flash.seamlesstabbing }}				<param name="seamlesstabbing" value="{{ . }}" />
+{{ end }}{{ with .flash.wmode }}				<param name="wmode" value="{{ . }}" /><!-- window, direct, opaque, transparent, gpu -->
+{{ end }}{{ with .image }}				<img src="{{ .src }}" {{ with .width }}width="{{ . }}" {{ end }}{{ with .height }}height="{{ . }}" {{ end }}{{ with .alt }}alt="{{ . }}" {{ end }}/>
+{{ end }}			</object>

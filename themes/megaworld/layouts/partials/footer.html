@@ -1,0 +1,11 @@
+		{{ `<!-- MegaWorld Theme v1 Partial footer.html -->` | safeHTML }}
+			<footer id="page_footer">
+	{{ range first 1 .Site.Params.footer_list }}
+				<p>{{ . | safeHTML }}</p>
+	{{ end }}
+			</footer>
+		</main>
+{{ template "_internal/google_analytics_async.html" . }}
+
+	</body>
+</html>

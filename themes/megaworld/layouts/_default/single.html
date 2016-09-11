@@ -1,0 +1,12 @@
+{{ partial "header.html" . }}
+		{{ `<!-- MegaWorld Theme Default single.html -->` | safeHTML }}
+
+		<main id="main_content" class="grid" role="main">
+			<header>
+				<h1>{{ .Title }}</h1>
+			</header>
+			
+			{{ .Content }}
+		</main>
+
+{{ partial "footer.html" . }}

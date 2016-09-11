@@ -1,0 +1,44 @@
+{{ partial "header.html" . }}
+		{{ `<!-- MegaWorld Theme v1 grimoire single.html -->` | safeHTML }}
+
+		<main id="main_content" class="grid" role="main">
+			<header>
+				<h1>{{ .Title }}</h1>
+			</header>
+			
+			{{ .Content }}
+
+			<table class="grimoire">
+				<caption>Grimoire</caption>
+				<thead>
+					<th>Spell</th>
+					<th>RQ</th>
+					<th>Description</th>
+				</thead>
+				<tbody>
+			{{ range .Site.Data.magick.casting.spells }}
+					<tr>
+						<th colspan="3">Sphere of {{ .sphere }}</th>
+					</tr>
+				{{ range .data }}
+					<tr>
+						<td>{{ .name | markdownify }}</td>
+						<td align="center">{{ .requ | markdownify }}</td>
+						<td>{{ .desc | markdownify }}</td>
+					</tr>
+				{{ end }}
+			{{ end }}
+				</tbody>
+			</table>
+
+{{ with .Site.Data.magick.links }}
+			<h3>Reference List</h3>
+			<ul>
+				{{ range sort . }}
+				<li><a href="{{ .url }}">{{ .name }}</a></li>
+				{{ end }}
+			</ul>
+{{ end }}
+		</main>
+
+{{ partial "footer.html" . }}

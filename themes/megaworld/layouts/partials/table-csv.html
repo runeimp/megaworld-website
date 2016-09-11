@@ -1,0 +1,12 @@
+			<table>
+				<thead>{{ range first 1 . }}
+					<tr>{{ range . }}
+						<th>{{ . | markdownify }}</th>{{ end }}
+					</tr>{{ end }}
+				</thead>
+				<tbody>{{ range after 1 . }}
+					<tr>{{ range . }}
+						<td>{{ . | markdownify }}</td>{{ end }}
+					</tr>{{ end }}
+				</tbody>
+			</table>

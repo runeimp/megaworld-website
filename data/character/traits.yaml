@@ -1,0 +1,349 @@
+traits:
+  - tid: allies
+    name: Allies
+    cost: 1
+    desc: "1 AP per person or thing (alien, familiar, ghost, pet, etc.) who will do things for you. Allies get 8 AP and 30 CP each."
+  - tid: alter_ego
+    name: Alter Ego
+    cost: 1
+    desc: '1 AP per each alternate "mostly legal" identity.'
+  - tid: ambidextrous
+    name: Ambidextrous
+    cost: 3
+    desc: "Ability to use both hands at once. +2 on your Attach, Defense or +1 each."
+  - tid: comeliness
+    name: Comeliness
+    cost: 1 - 5
+    desc: "Greater than average attractiveness. +1 (per AP spent) when dealing with the those attracted to your character's gender."
+  - tid: contacts
+    name: Contacts
+    cost: 1
+    desc: "1 AP per rank in the range: 1 -- 5. Major Contact (people who have some resource you can use, i.e. credits, info, supplies, etc. Used as a skill when attempting to get something from your contact."
+  - tid: credit_rating
+    name: Credit Rating
+    cost: 1
+    desc: "Effects the amount of Credit on your ID Card and your probability of getting loans & such. Limit on ID: 1 = 1,000&curren;  ; 2 = 2,000&curren;  ; 3 = 4,000&curren;  ; 4 = 8,000&curren;  ; 5 = 16,000&curren;"
+  - tid: eidetic_memory
+    name: Eidetic Memory
+    cost: 3 or 5
+    desc: 'Double the amount of high level skills. At the 1st level general memory rolls are done a SL4. At the 2nd level (true "photographic memory") memory rolls are done at SL5 and only for very old memories and all skill costs are treated as if they were one level lower.'
+  - tid: expert
+    name: Expert
+    cost: 3
+    desc: "You can raise one skill above level 3. May be taken more than once. Characters can only have half there Intellect in expert level skills unless they have Eidetic Memory."
+  - tid: fame
+    name: Fame
+    cost: 1 - 5
+    desc: "Level 1 - your known around the city. Level 5 - you have trouble not being recognized on other planets. Used as a skill roll using Charisma."
+  - tid: grace
+    name: Grace
+    cost: 1
+    desc: "You have beautiful movement. +1 when trying to impress people with movement."
+  - tid: immortal
+    name: Immortal
+    cost: 5 or 10
+    desc: '(10) You cannot be "slain". But you can still be put out of commission by a resourceful Character...<br>(5) You can be killed by some specific means, I.e. Must have your head cut off, heart cut out, etc. Fire and other forms of Aggravated Damage always work as well.'
+  - tid: mentor
+    name: Mentor
+    cost: 1 - 5
+    desc: "Person who teaches you (usually Magick). 1 to 5 for his rating as a teacher."
+  - tid: power
+    name: "Power"
+    cost: "1 -- 10"
+    desc: "A special ability or trait beyond the norm. Powers that add a damage bonus cost the bonus × 2. All other bonuses are bonus × 1.<br>See examples bellow."
+  - tid: resources
+    name: Resources
+    cost: 1 - 5
+    desc: "Credits you receive each month from job, trust, donation, etc.<br>1 - 500&curren; ; 2 - 1,000&curren; ; 3 - 1,500&curren; ; 4 - 2,000&curren; ; 5 - 2,500&curren;"
+  - tid: specialization
+    name: Specialization
+    cost: 2
+    desc: "Gives a + 1 to your reroll on a specific skill."
+  - tid: status
+    name: Status
+    cost: 1 - 5
+    desc: "How much weight you carry in your society (Vampires, Magus, Celtic, Military, etc.)<br>Military Rank: 0 = Private, 1 = Sergeant, 2 = Lieutenant (Sergeant Major), 3 = Captain (Warrant Officer), 4 = Major, 5 = Commander"
+  - tid: supernatural
+    name: Supernatural
+    cost: 1
+    desc: "You are a supernatural creature (vampire, werewolf, etc.) and are capable of doing aggravated damage. And 1 thing does aggravated damage to your character that wouldn't normally do so. Your choice - silver, UV radiation (sunlight), kryptonite, etc."
+  - tid: toughness
+    name: Toughness
+    cost: 3
+    desc: "All physical damage is -1."
+  - tid: wealth
+    name: Wealth
+    cost: 1 - 5
+    desc: "Credits you may spend during character creation to equip your character<br>1 -  10,000&curren; ; 2 - 30,000&curren; ; 3 - 100,000&curren; ; 4 - 300,000&curren; ; 5 - 1,000,000&curren;"
+  - tid: affinity
+    name: Affinity
+    cost: -3
+    desc: "Choosing something that has several variants of which you will likely encounter such as a type of land (desert or mountains, etc.) and the Skill Group it will affect. That is your Affinity. You have a +1 to your chosen Skill Group while in the environment your Affinity is for. You have a -1 in all other environments except distinct transitional environments.<br>
+      <p>**Example 1:** Affinity: open desert. Skill Group: Magick. Your character gets a +1 to Magick rolls while in the desert. A -1 in all other environment types. While in a city with much cement, etc. that is within a desert your character has a 0 modifier.</p>
+      **Example 2:** Affinity: night. Skill Group: Combat. Your character gets a +1 to all Combat rolls at night. A -1 during the day. And there is no modifier at dusk or dawn."
+  - tid: berserker
+    name: Berserker
+    cost: -2
+    desc: 'Character is immune to "stun" while berserk but is at Intellect: 1 also. Must choose something that triggers the rage.'
+  - tid: debt_to_the_bank
+    name: Debt to the Bank
+    cost: 0
+    desc: "Loan is multiplied by 1.1 then divided into 60 monthly payments. If your are more than 3 months behind they take what they can get to replace the money lost in the loan. Legal."
+  - tid: fear
+    name: Fear
+    cost: 2
+    desc: "Heights, aliens, etc. Roll a Fright Check at TN &times; 2."
+  - tid: justifier
+    name: Justifier
+    cost: 0
+    desc: 'As a Justifier your character starts out with a certain amount of money you determine, given to you by a particular entity. The entity that gave you the money OWNS you until you work it off. Legal.<br>5,000,000&curren; + your "Starting Funds" = the Payback Cost for your Justifier.'
+  - tid: mark_of_the_beast
+    name: Mark of the Beast
+    cost: 0
+    desc: "1 point for each Power (from Gifts) allotted. Limitation: Frenzy.<br>Frenzy - on a power roll 5+ success and the character enters a rage until she kills someone!"
+  - tid: phobia
+    name: Phobia
+    cost: -5
+    desc: "Heights, aliens, etc. Roll a Fright Check at TN &times; 3."
+  - tid: power_finite
+    name: Power Finite
+    cost: -5
+    desc: "Must replenish reservoir (of Power Meter) or Frenzy at 0."
+combinations:
+  - tid: hand_of_the_black_dragon
+    name: The Hand of the Black Dragon
+    cost: 5
+    desc: "The Hand of the Black Dragon is the King&#039;s Special Guard. One never leaves the King&#039;s Special Guard. Much like todays NSA, FBI, and Delta Force rolled up into one.<br>Rersources: 1,000&curren;, Wealth: 100,000&curren; for equipment. And a Contact: Level 3 at The Hand of the Black Dragon."
+    sort: 0
+  - tid: the_agency
+    name: '**"THE AGENCY"**'
+    cost: 5
+    desc: 'The Agency owns you. In fact they&#39;ve placed a small explosive device next to the cortex of your brain stem. In return you get -<br>
+    **Resources:** 2,000&curren; a month<br>
+    **Wealth:** 100,000&curren; for equipment<br>
+    **Contacts:** A Level 3 Contact at The Agency.<br>
+    You know 1 person at the Agency. The Agency started The Hand of The Black Dragon. The Agency runs the Government.<br>
+    But most importantly "The Agency doesn&#39;t exist...".'
+    sort: 1
+powers:
+  - tid: health
+    category: Health
+    data:
+      - gid: regeneration
+        group: Regeneration
+        versions:
+          - name: Super Fast Regeneration
+            cost: 10
+            desc: 1 HP/turn
+          - name: Quick Regeneration
+            cost: 9
+            desc: 1 HP/3 turns
+          - name: Regeneration
+            cost: 8
+            desc: 1 HP/6 turns
+          - name: Slow Regeneration
+            cost: 7
+            desc: 1 HP/10 turns
+          - name: Very Slow Regeneration
+            cost: 6
+            desc: 1 HP/30 turns
+          - name: Fast Healer
+            cost: 5
+            desc: 1 HP/minute
+  - tid: movement
+    category: Movement
+    data:
+      - gid: flight
+        group: Flight
+        versions:
+          - id: winged
+            name: Winged Flight
+            cost: 4
+            desc: 2 squares per Action
+          - id: wingless
+            name: Wingless Flight
+            cost: 6
+            desc: 2 squares per Action
+          - id: levitation
+            name: Levitation
+            cost: 2
+            desc: 1 square per Action
+      - gid: teleportation
+        group: Teleportation
+        versions:
+          - id: blink
+            name: Blink
+            cost: 10
+            desc: Range = TN
+          - id: step_sideways
+            name: Step Sideways
+            cost: 5
+            desc: Step back and forth into a different realm or dimension. One realm or dimension per purchase.
+          - id: gate
+            name: Gate
+            cost: 8
+            desc: Range = TN rolled each turn held open
+      - gid: surfaces
+        group: Surfaces
+        versions:
+          - id: claws_climbing
+            name: Climbing Claws
+            cost: 2
+            desc: climbing + 2
+          - id: walk_on_water
+            name: Walk on Water
+            cost: 4
+            desc: Can move upon the surface of water as if on dry land.
+          - id: wall_crawling
+            name: Wall Crawling
+            cost: 4
+            desc: Can move along any solid surface as if on dry land.
+  - tid: perception
+    category: Perception
+    data:
+      - gid: esp
+        group: '<abbr title="Extrasensory Perception">ESP</abbr>'
+        note: "All ESP is based on the character's Power attribute"
+        versions:
+          - id: lidar
+            name: Lidar
+            cost: 2
+            desc: Can project and map your environment based on LASER (directed light) signals.
+          - id: astral_projection
+            name: Astral Projection
+            cost: "1 - 5"
+            desc: Astral Projection or [Remote Viewing](https://en.wikipedia.org/wiki/Remote_viewing) allows the character to project their consciousness to a remote location and experience it as if they were their in actuality. Cost equals the desired Skill Level.
+          - id: channeling
+            name: Channeling
+            cost: "1 - 5"
+            desc: "A Channeler can allow their person to become a channel through which other worldly beings may communicate with this world to deliver information or healing energy. Cost equals the desired Skill Level."
+          - id: clairaudience
+            name: Clairaudience
+            cost: "1 - 5"
+            desc: A Clairaudient can gain aural (sound) information about a person, place, or thing without being present. Cost equals the desired Skill Level.
+          - id: claircognizance
+            name: Claircognizance
+            cost: "1 - 5"
+            desc: A Claircognizant can gain sudden knowledge without prior experience of it. Cost equals the desired Skill Level.
+          - id: clairgustance
+            name: Clairgustance
+            cost: "1 - 5"
+            desc: A Clairgustant (<abbr title="spelling?">sp?</abbr>) can gain oral (taste) information about things. To taste the essence or true nature of a thing without use of the mouth.
+          - id: clairofactus
+            name: Clairofactus
+            cost: "1 - 5"
+            desc: A Clairofactunt (<abbr title="spelling?">sp?</abbr>) can gain olfactory (smell) information about the energies or state of a person, place, or thing. Such as their health, mineral needs, structural integrity, etc. Cost equals the desired Skill Level.
+          - id: clairsentience
+            name: Clairsentience
+            cost: "1 - 5"
+            desc: A Clairsentient or Empath can gain tactile (touch) and emotional information about a person, place, or thing without the use of the normal 5 senses. Cost equals the desired Skill Level.
+          - id: clairvoyance
+            name: Clairvoyance
+            cost: "1 - 5"
+            desc: A clairvoyant can gain visual (sight) information about a person, place, or thing without being present. Cost equals the desired Skill Level.
+          - id: mind_reading
+            name: Mind Reading
+            cost: "1 - 5"
+            desc: "The ability to invade anothers thoughts. TN = Range + Power (of target).<br>_Range:_ touch = 0, near = +1, LOS = +2, obstructed LOS = +2, beyond LOS = 4, another state = 5, another continent = 6, another planet = 7, another galaxy = 8, another dimension = 9"
+          - id: precognition
+            name: Precognition
+            cost: "1 - 5"
+            desc: Prescience allows the user to gain knowledge of the future. TN = distance into the future.<br>_Future:_ days = 1, 1 week Cost equals the desired Skill Level.
+          - id: radar
+            name: RADAR
+            cost: 3
+            desc: Can project and map your environment based on radio signals.
+          - id: telepathy
+            name: Telepathy
+            cost: "1 - 5"
+            desc: The ability to communicate with others via the mind alone. This is not mind reading. Your character can only receive messages sent by others volentarily. Cost equals the desired Skill Level.
+      - gid: aural
+        group: Aural
+        versions:
+          - id: subsonic_hearing
+            name: Subsonic Hearing
+            cost: 1
+            desc: "Subsonic sounds can be perceived. Such as the earth's plates moving."
+          - id: ultrasonic_hearing
+            name: Ultrasonic Hearing
+            cost: 1
+            desc: Dogs got nothing on you. Can easily hear sound frequensies higher than normal human perception.
+          - id: sonar
+            name: SONAR
+            cost: 1
+            desc: Can map your environment based on perceived sounds alone. Can be combined with subsonic and ultrasonic hear to map into those frequensies.
+          - id: sound_sensitive
+            name: Sound Sensitive
+            cost: 1
+            desc: Can perceive sounds much to subtle (quiet) to be heard by most humans.
+      - gid: vision
+        group: Visual
+        versions:
+          - id: infravision
+            name: Infravision (Infrared Lit)
+            cost: 2
+            desc: Can see into the infrared spectrum and detect things illuminated by an infrared light. B&W imaging. Vision blocked by glass and anything else that can absort or reflect heat or infrared light.
+          - id: thermalvision
+            name: Thermalvision (true Infravision)
+            cost: 3
+            desc: Can perceive things by the heat given off by them. Can see in the dark and through smoke without visible light.<br>Max range around 400m. Vision blocked by glass and anything else that can absort or reflect heat or infrared light.
+          - id: ultravision
+            name: Ultravision
+            cost: 2
+            desc: Can see into the ultraviolet spectrum. Can see in the dark without visible light and distinguish things otherwise hidden by color matching. Vision blocked by zinc oxide and anything else that can absort or reflect ultraviolet light.
+  - tid: weapons
+    category: Weapons
+    data:
+      - gid: energy
+        group: Energy
+        versions:
+          - id: breath_fire
+            name: Breath Fire
+            cost: 8
+            desc: "DMG: 5, RNG: 9"
+          - id: energy_blast
+            name: Energy Blast
+            cost: 8
+            desc: "DMG: 3, RNG: 15"
+      - gid: natural
+        group: Natural
+        versions:
+          - id: claws_fighting
+            name: Fighting Claws
+            cost: 2
+            desc: "DMG: B+1"
+          - id: fangs
+            name: Fangs
+            cost: 4
+            desc: "DMG: B+2"
+links:
+  - name: Clairaudience - Wikipedia
+    url: "https://en.wikipedia.org/wiki/Clairvoyance#Clairaudience_.28Hearing.2FListening.29"
+  - name: Claircognizance - Wikipedia
+    url: "https://en.wikipedia.org/wiki/Clairvoyance#Claircognizance_.28Knowing.2FUnderstanding.29"
+  - name: Clairgustance - Wikipedia
+    url: "https://en.wikipedia.org/wiki/Clairvoyance#Clairgustance_.28Tasting.29"
+  - name: Clairofactus - Wikipedia
+    url: "https://en.wikipedia.org/wiki/Clairvoyance#Clairofactus_.28Smelling.29"
+  - name: Clairvoyance - Wikipedia
+    url: "https://en.wikipedia.org/wiki/Clairvoyance"
+  - name: Extrasensory Perception - Wikipedia
+    url: "https://en.wikipedia.org/wiki/Extrasensory_perception"
+  - name: Lidar - Wikipedia
+    url: "https://en.wikipedia.org/wiki/Lidar"
+  - name: Precognition - Wikipedia
+    url: "https://en.wikipedia.org/wiki/Precognition"
+  - name: Radar - Wikipedia
+    url: "https://en.wikipedia.org/wiki/Radar"
+  - name: Remote Viewing - Wikipedia
+    url: "https://en.wikipedia.org/wiki/Remote_viewing"
+  - name: Retrocognition - Wikipedia
+    url: "https://en.wikipedia.org/wiki/Retrocognition"
+  - name: Telepathy - Wikipedia
+    url: "https://en.wikipedia.org/wiki/Telepathy"
+  - name: Thermographic Camera - Wikipedia
+    url: "https://en.wikipedia.org/wiki/Thermographic_camera"
+
+# Thermalvision - 2, Infravision  - 3, Ultravision - 4, Subsonic Hearing - 1, Ultrasonic Hearing - 2.<br>
+#     _These are just examples of how to do Powers. You can modify them as you see fit._
+

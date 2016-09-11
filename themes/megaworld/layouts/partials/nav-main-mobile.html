@@ -1,0 +1,6 @@
+			{{ `<!-- MegaWorld Theme v1 Partial nav-main-mobile.html -->` | safeHTML }}
+			<nav class="mobile-only">
+				<ul>{{ range .Site.Menus.main }}
+					<li><a href="{{ .URL }}">{{ .Name | safeHTML }}</a></li>{{ end }}
+				</ul>
+			</nav>

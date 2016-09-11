@@ -1,0 +1,45 @@
+Description,Weight,Damage,Unwieldy,Penetration,Reach,Tech,Notes
+Axe - Battle,7,8/4 + BD (S),8.5,0,0,2,(S) Slashing weapon
+Axe - Hand/Throwing,5,6/3 + BD (S),6.5,0,1*,2,(S) Slashing weapon
+Baton,3,4 + BD (B),2,0,0,2,(B) Bludgening weapon
+Club,3,3 + BD (B),3,0,0,0,(B) Bludgening weapon
+Dagger or Dirk,1,1 + BD (P),2,1,1*,4,(P) Piercing weapon. RNG = Reach. Reach = 0.
+Flail - Footman's,15,15 + BD (B),16,0,1,1,(B) Bludgening weapon
+Flail - Horseman's,5,8 + BD (B),8,0,0,1,(B) Bludgening weapon
+Knife,1,2/1 + BD (S),2,0,1*,2,(S) Slashing weapon. RNG = Reach. Reach = 0.
+Lance - Light,5,3 + BD (P),7,3,1,3,(P) Piercing weapon
+Lance - Medium,10,5 + BD (P),11,5,1,3,(P) Piercing weapon
+Lance - Heavy,15,20 + BLD (B),17,8,1,3,(B) Bludgening weapon
+Lance - Jousting,20,20 + BLD (B),21,0,1,0,(B) Bludgening weapon
+Main-Gauche,2,2/1 + BLD (S/P),2,0 / 2,0,4,(S/P) Slashing/Piercing weapon
+Morning Star,12,6 + BLD (P),12,6,0,3,(P) Piercing weapon
+Pole Arm - Glaive,8,8/4 + BLD (S),8,0,2,2,(S) Slashing weapon
+Pole Arm - Halberd,15,16/8 + BLD (S/P),18,8,2,3,(S/P) Slashing/Piercing weapon
+Pole Arm - Lucern Hammer,15,16 + BLD (B/P),18,8,2,3,(B/P) Bludgening/Piercing weapon
+Pole Arm - Pike,12,6 + BLD (P),14,6,2,3,(P) Piercing weapon
+Pole Arm - Ranseur,7,4 + BLD (P),8,4,2,3,(P) Piercing weapon
+Quarterstaff,4,4 + BLD (B),5,0,1,0,(B) Bludgening weapon
+Sap (Blackjack),1,2 + BLD (B - stun),2,0,0,0,(B) Bludgening weapon
+Scourge,2,2/1 + BLD (S),2,0,0,0,Much like a cat-o-nine-tails
+Sickle,3,4/2 + BLD (S),5,0,1,0,(S) Slashing weapon
+Spear,5,3 + BLD (P),7,3,1 / 1*,3,(P) Piercing weapon. Reach / RNG
+Stiletto,0.5,BLD (P),0.5,1,0,3,(P) Piercing weapon
+Sword - Bastard (1H),10,8/4 + BLD (S/P),9,6,1,3,(S/P) Slashing/Piercing weapon
+Sword - Bastard (2H),10,10/5 + BLD (S/P),11,6,1,3,(S/P) Slashing/Piercing weapon
+Sword - Broad Sword,4,4/2 + BLD,5,0,1,2,
+Sword - Claymore,10,10/5 + BLD,11,0,1,2,
+Sword - Cutlass,4,4/2 + BLD (S),5,0,1,2,(S) Slashing weapon
+Sword - Drusus,3,5 + BLD (S/P),6,0,4,5,(S/P) Slashing/Piercing weapon
+Sword - Falchion,8,12 + BLD,8,0,1,2,
+Sword - Khopesh,7,11 + BLD,7,0,1,2,
+Sword - Longsword,4,8 + BLD / 2 + BLD (N/M),4,4,1,3,
+Sword - Rapier,4,2 + BLD (M),4,4,1,3,
+Sword - Sabre,5,8 + BLD,5,0,1,2,
+Sword - Scimitar,4,6 + BLD (S),4,0,1,2,(S) Slashing weapon
+Sword - Short Sword,3,2 + BLD / 5 + BLD (M/N),4,4 / 0,1*,3,
+Sword - Smallsword,3,2 + BLD (P),3,4,1,4,(P) Piercing weapon
+Sword - Great Sword,15,23 + BLD,15,0,1,2,
+Trident (1H),5,3 + BLD (M),6,6,2,3,
+Trident (2H),5,4 + BLD (M),8,8,2,3,
+War Hammer,6,8 + BLD (B),8,0,1,1,(B) Bludgening weapon
+Whip - 10' Bullwhip,3,3 + BLD (S),6,0,2,2,(S) Slashing weapon

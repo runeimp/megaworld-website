@@ -1,0 +1,92 @@
+{{ partial "header.html" . }}
+		{{ `<!-- MegaWorld Theme v1 gift single.html -->` | safeHTML }}
+
+		<main id="main_content" class="grid" role="main">
+			<header>
+				<h1>{{ .Title }}</h1>
+			</header>
+
+			{{ .Content }}
+
+			<table class="traits">
+				<caption>Gifts &amp; Limitations</caption>
+				<thead>
+					<th>Trait</th>
+					<th>Cost</th>
+					<th>Description</th>
+				</thead>
+				<tbody>
+			{{ range sort .Site.Data.character.traits.traits "tid" }}
+					<tr>
+						<td>{{ .name | markdownify }}</td>
+						<td align="center">{{ .cost | markdownify }}</td>
+						<td>{{ .desc | markdownify }}</td>
+					</tr>
+			{{ end }}
+				</tbody>
+			</table>
+
+			<table class="traits">
+				<caption>Trait Combinations</caption>
+				<thead>
+					<th>Combo</th>
+					<th>Cost</th>
+					<th>Description</th>
+				</thead>
+				<tbody>
+			{{ range sort .Site.Data.character.traits.combinations "sort" }}
+					<tr>
+						<td>{{ .name | markdownify }}</td>
+						<td align="center">{{ .cost | markdownify }}</td>
+						<td>{{ .desc | markdownify }}</td>
+					</tr>
+			{{ end }}
+				</tbody>
+			</table>
+
+<!-- 			<ul>
+				{{ range sort .Site.Data.character.traits.powers }}
+					<li><code>{{ . }}</code></li>
+				{{ end }}
+			</ul> -->
+
+			<table class="traits powers">
+				<caption>Powers</caption>
+				<thead>
+					<th>Category</th>
+					<th>Group</th>
+					<th>Power</th>
+					<th>Cost</th>
+					<th>Description</th>
+				</thead>
+				<tbody>
+			{{ range sort .Site.Data.character.traits.powers }}
+				{{ $cat := .category }}
+				{{ range sort .data "gid" }}
+					{{ $group := .group }}
+					{{ range sort .versions "name" }}
+					<tr>
+						<td>{{ $cat }}</td>
+						<td>{{ $group | safeHTML }}</td>
+						<td>{{ .name | markdownify }}</td>
+						<td align="center">{{ .cost | markdownify }}</td>
+						<td>{{ .desc | markdownify }}</td>
+					</tr>
+					{{ end }}
+				{{ end }}
+			{{ end }}
+				</tbody>
+			</table>
+
+			<p>These are just examples of how to do Powers. You can modify them as you see fit.</p>
+
+			<h3>Reference List</h3>
+			<ul>
+				{{ range sort .Site.Data.character.traits.links }}
+				<li><a href="{{ .url }}">{{ .name }}</a></li>
+				{{ end }}
+			</ul>
+
+		</main>
+
+{{ partial "footer.html" . }}

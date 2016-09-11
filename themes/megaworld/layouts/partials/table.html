@@ -1,0 +1,22 @@
+			<table{{ with .id }} id="{{ . }}"{{ end }}{{ with .class }} class="{{ . }}"{{ end }}>{{ with .capt }}
+				<caption>{{ . }}</caption>{{ end }}{{ with .thead }}
+				<thead>
+					<tr>{{ range . }}
+						<th{{ with .class }} class="{{ . }}"{{ end }}{{ with .colspan }} colspan="{{ . }}"{{ end }}>{{ with .data }}{{ . | markdownify }}{{ end }}</th>{{ end }}
+					</tr>
+				</thead>{{ end }}{{ with .tbody }}
+				<tbody>{{ range . }}
+					<tr>{{ range .row }}
+{{ if eq .tag "th" }}
+						<th{{ with .class }} class="{{ . }}"{{ end }}{{ with .colspan }} colspan="{{ . }}"{{ end }}>{{ .data | markdownify }}</th>
+{{ else }}
+						<td{{ with .class }} class="{{ . }}"{{ end }}{{ with .colspan }} colspan="{{ . }}"{{ end }}>{{ .data | markdownify }}</td>
+{{ end }}						{{ end }}
+					</tr>{{ end }}
+				</tbody>{{ end }}{{ with .tfoot }}
+				<tfoot>
+					<tr>{{ range . }}
+						<td{{ with .class }} class="{{ . }}"{{ end }}{{ with .colspan }} colspan="{{ . }}"{{ end }}>{{ with .data }}{{ . | markdownify }}{{ end }}</td>{{ end }}
+					</tr>
+				</tfoot>{{ end }}
+			</table>

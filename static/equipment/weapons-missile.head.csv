@@ -1,0 +1,15 @@
+Description,Weight,Damage,Unwieldy,Penetration,Range,Tech,Notes
+Bolas,2,3 + BLD,6,0,3,1,Proficiency takes many years of practice
+Bow - Long (flight),3,3 + BLD (M),11,6,7,2,Proficiency takes many years of practice
+Bow - Long (sheaf),3,4 + BLD (M),11,4,5,2,Proficiency takes many years of practice
+Bow - Short,2,2 + BLD (M),8,4,4,1,Proficiency takes many years of practice
+Bow - Composite Long (flight),3,3 + BLD (M),9,6,7,2,Proficiency takes many years of practice
+Bow - Composite Long (sheaf),6,4 + BLD (M),9,8,5,2,Proficiency takes many years of practice
+Crossbow - Hand,3,2 (M),8,4,4,3,Proficiency takes many days of practice
+Crossbow - Light,7,4 (M),5,8,5,2,Proficiency takes many days of practice
+Crossbow - Heavy,14,7 (M),20,14,6,3,Proficiency takes many days of practice
+Dart,0.5,1 + REF (M),3.5,2,2,2,Proficiency takes many months of practice
+Javelin,2,2 + BLD (M),7,4,3,1,Proficiency takes many months of practice
+Sling - Bullet,0.5,2 + REF,5,0,5,2,Proficiency takes many years of practice
+Sling - Stone,0.5,1 + REF,5,0,4,0,Proficiency takes many years of practice
+Sling - Staff Sling,2,3 + REF,5,0,6,1,Proficiency takes many years of practice

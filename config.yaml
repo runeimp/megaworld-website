@@ -1,0 +1,169 @@
+baseurl: "http://v1.megaworld.info/"
+description: "Site Description"
+googleAnalytics: "UA-83794439-1"
+ignoreFiles: [ "\\.git$" ]
+languageCode: "en-us"
+theme: "megaworld"
+title: "MegaWorld"
+copyright: '<p class="copyright">The MegaWorld RPG is<br>Copyright &copy; 1995, 2016<br>Mark Preston Gardner<br>AKA RuneImp</p>'
+
+
+blackfriday:
+  latexDashes: false
+  extensions: ["hardLineBreak"]
+
+params:
+  author: "RuneImp"
+  description: "MegaWorld is a 'Pen & Paper' RPG based on the concept of a future existence where magick and the fae realm has returned to the world and intermingles with cybernetics and humans are one of the many races that explore the universe."
+  footer: "&ldquo;Wibbly Wobbly Timey Wimey Stuff&rdquo; &mdash; <em>The &lsquo;10<sup>th</sup>&rsquo; Doctor</em>"
+  footer_list:
+    - "My Amazing MegaFooter!"
+    - "&ldquo;Wibbly Wobbly Timey Wimey Stuff&rdquo; &mdash; <em>The &lsquo;10<sup>th</sup>&rsquo; Doctor</em>"
+    - "My Amazing Footer"
+    - "For the love of all that is sexy in the world!"
+  body:
+    class: "page-body"
+  flash:
+    header:
+      flash:
+        bgcolor: "#F0F0F0"
+        height: 75
+        id: "flash_header"
+        quality: "best"
+        scale: default # default (show all), noborder, exactfit, noscale
+        src: "/pix/MegaWorldTitle.swf"
+        width: 600
+        wmode: "opaque"
+      image:
+        alt: "MegaWorld"
+        src: "/pix/MegaWorldTitle_1200x96.png"
+        width: 600
+    nav:
+      flash:
+        bgcolor: "#0066CC"
+        height: 450
+        play: false
+        quality: "high"
+        scale: noscale # default (show all), noborder, exactfit, noscale
+        src: "/menu.swf"
+        width: 200
+        wmode: "opaque"
+menu:
+  main:
+    - name: Introduction
+      weight: 10
+      identifier: introduction
+      url: "/"
+
+    - name: History
+      weight: 20
+      identifier: history
+      url: "/history/"
+
+    - name: System
+      weight: 30
+      identifier: system
+      url: "/system/"
+
+    - name: Characters
+      weight: 40
+      identifier: characters
+      url: "/characters/"
+    - name: Attributes
+      parent: characters
+      weight: 41
+      identifier: attributes
+      url: "/characters/attributes/"
+    - name: Skills
+      parent: characters
+      weight: 42
+      identifier: skills
+      url: "/characters/skills/"
+    - name: Traits
+      parent: characters
+      weight: 43
+      identifier: traits
+      url: "/characters/traits/"
+    - name: Races
+      parent: characters
+      weight: 44
+      identifier: races
+      url: "/characters/races/"
+    - name: "Tech Level"
+      parent: characters
+      weight: 45
+      identifier: "tech level"
+      url: "/characters/tech-level/"
+
+    - name: Magick
+      weight: 50
+      identifier: magick
+      url: "/magick/"
+    - name: Spheres
+      parent: magick
+      weight: 51
+      identifier: spheres
+      url: "/magick/spheres/"
+    - name: Casting
+      parent: magick
+      weight: 52
+      identifier: casting
+      url: "/magick/casting/"
+
+    - name: Combat
+      weight: 60
+      identifier: combat
+      url: "/combat/"
+
+    - name: Healing
+      weight: 70
+      identifier: healing
+      url: "/healing/"
+
+    - name: Equipment
+      weight: 80
+      identifier: equipment
+      url: "/equipment/"
+    - name: Armor
+      parent: equipment
+      weight: 81
+      identifier: armor
+      url: "/equipment/armor/"
+    - name: Decks
+      parent: equipment
+      weight: 82
+      identifier: decks
+      url: "/equipment/decks/"
+    - name: Gear
+      parent: equipment
+      weight: 83
+      identifier: gear
+      url: "/equipment/gear/"
+    - name: Outfits
+      parent: equipment
+      weight: 84
+      identifier: outfits
+      url: "/equipment/outfits/"
+    - name: Tools
+      parent: equipment
+      weight: 85
+      identifier: tools
+      url: "/equipment/tools/"
+    - name: Utensils
+      parent: equipment
+      weight: 86
+      identifier: utensils
+      url: "/equipment/utensils/"
+    - name: Weapons
+      parent: equipment
+      weight: 87
+      identifier: weapons
+      url: "/equipment/weapons/"
+    - name: "Dice Rollers"
+      weight: 90
+      identifier: dice-rollers
+      url: "/dice-rollers/"
+    # - name: ____
+    #   weight: 00
+    #   identifier: ____
+    #   url: "/____/"

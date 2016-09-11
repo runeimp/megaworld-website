@@ -1,0 +1,32 @@
+@font-face{
+	font-family: "Helvetica W01 Narrow Rg";
+	src: local("Arial Narrow"),
+		local("Arial-Narrow");
+	src: url(/assets/fonts/_____.eot.eot);/* IE9 Compatibility Modes */
+	src: url(/assets/fonts/_____.eot.eot?iefix) format("embedded-opentype"), /* IE6 – IE8 */
+		url(/assets/fonts/_____.woff) format("woff"), /* Modern Browsers: IE9, FF 3.5, Chrome */
+		url(/assets/fonts/_____.ttf) format("truetype"), /* Safari, Android, iOS */
+		url(/assets/fonts/_____.svg#_____) format("svg"); /* Legacy iOS */
+	font-weight: medium;/* 400 */
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Helvetica W01 Narrow Bd";
+	src: local("Arial Narrow Bold"),
+		local("Arial-NarrowBold");
+	src: url(/assets/fonts/_____.eot);/* IE9 Compatibility Modes */
+	src: url(/assets/fonts/_____.eot?iefix) format("embedded-opentype"), /* IE6 – IE8 */
+		url(/assets/fonts/_____.woff) format("woff"), /* Modern Browsers: IE9, FF 3.5, Chrome */
+		url(/assets/fonts/_____.ttf) format("truetype"), /* Safari, Android, iOS */
+		url(/assets/fonts/_____.svg#_____) format("svg"); /* Legacy iOS */
+	font-weight: bold;/* 700 */
+	font-style: normal;
+}
+
+/*
+Play
+font-family: Play, sans-serif;
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Play:400,700);

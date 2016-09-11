@@ -1,0 +1,11 @@
+			{{ `<!-- MegaWorld Theme v1 Partial nav-main-desktop.html -->` | safeHTML }}
+			<nav class="desktop-only">
+				<ul>{{ range .Site.Menus.main }}{{ if .HasChildren }}
+					<li><a href="{{ .URL }}">{{ .Name | safeHTML }}</a>
+						<ul>{{ range .Children }}
+							<li><a href="{{ .URL }}">{{ .Name | safeHTML }}</a></li>{{ end }}
+						</ul>
+					</li>{{ else }}
+					<li><a href="{{ .URL }}">{{ .Name | safeHTML }}</a></li>{{ end }}{{ end }}
+				</ul>
+			</nav>

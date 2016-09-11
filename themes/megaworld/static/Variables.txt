@@ -1,0 +1,174 @@
+athleticsMC.specializations = athletics;
+awarenessMC.specializations = awareness;
+enigmasMC.specializations = enigmas;
+stealthMC.specializations = stealth;
+willPowerMC.specializations = willPower;
+combatMC.specializations = combat;
+gunneryMC.specializations = gunnery;
+gymnasticsMC.specializations = gymnastics;
+martialArtsMC.specializations = martialArts;
+meleeMC.specializations = melee;
+missileMC.specializations = missile;
+sleightOfHandMC.specializations = sleightOfHand;
+smallArmsMC.specializations = smallArms;
+animalKenMC.specializations = animalKen;
+etiquetteMC.specializations = etiquette;
+expressionMC.specializations = expression;
+linguisticsMC.specializations = linguistics;
+performanceMC.specializations = performance;
+streetwiseMC.specializations = streetwise;
+areaKnowledgeMC.specializations = areaKnowledge;
+businessMC.specializations = business;
+communicationsMC.specializations = communications;
+computersMC.specializations = computers;
+domesticMC.specializations = domestic;
+gamingMC.specializations = gaming;
+historyMC.specializations = history;
+lawMC.specializations = law;
+magikMatterMC.specializations = magikMatter;
+magikFlowMC.specializations = magikFlow;
+magikMindMC.specializations = magikMind;
+magikEnergyMC.specializations = magikEnergy;
+magikPrimeMC.specializations = magikPrime;
+medicineMC.specializations = medicine;
+physicsMC.specializations = physics;
+pilotMC.specializations = pilot;
+psychologyMC.specializations = psychology;
+pyroTekMC.specializations = pyroTek;
+scienceMC.specializations = science;
+securityMC.specializations = security;
+sensorsMC.specializations = sensors;
+survivalMC.specializations = survival;
+techMC.specializations = tech;
+trainMC.specializations = train;
+
+
+with (athleticsMC) {
+    gotoAndStop (athleticsSkill);
+}
+with (awarenessMC) {
+    gotoAndStop (awarenessSkill);
+}
+with (enigmasMC) {
+    gotoAndStop(enigmasSkill);
+}
+with (stealthMC) {
+    gotoAndStop(stealthSkill);
+}
+with (willPowerMC) {
+    gotoAndStop(willPowerSkill);
+}
+with (combatMC) {
+    gotoAndStop(combatSkill);
+}
+with (gunneryMC) {
+    gotoAndStop(gunnerySkill);
+}
+with (gymnasticsMC) {
+    gotoAndStop(gymnasticsSkill);
+}
+with (martialArtsMC) {
+    gotoAndStop(martialArtsSkill);
+}
+with (meleeMC) {
+    gotoAndStop(meleeSkill);
+}
+with (missileMC) {
+    gotoAndStop(missileSkill);
+}
+with (sleightOfHandMC) {
+    gotoAndStop(sleightOfHandSkill);
+}
+with (smallArmsMC) {
+    gotoAndStop(smallArmsSkill);
+}
+with (animalKenMC) {
+    gotoAndStop(animalKenSkill);
+}
+with (etiquetteMC) {
+    gotoAndStop(etiquetteSkill);
+}
+with (expressionMC) {
+    gotoAndStop(expressionSkill);
+}
+with (linguisticsMC) {
+    gotoAndStop(linguisticsSkill);
+}
+with (performanceMC) {
+    gotoAndStop(performanceSkill);
+}
+with (streetwiseMC) {
+    gotoAndStop(streetwiseSkill);
+}
+with (areaKnowledgeMC) {
+    gotoAndStop(areaKnowledgeSkill);
+}
+with (businessMC) {
+    gotoAndStop(businessSkill);
+}
+with (communicationsMC) {
+    gotoAndStop(communicationsSkill);
+}
+with (computersMC) {
+    gotoAndStop(computersSkill);
+}
+with (domesticMC) {
+    gotoAndStop(domesticSkill);
+}
+with (gamingMC) {
+    gotoAndStop(gamingSkill);
+}
+with (historyMC) {
+    gotoAndStop(historySkill);
+}
+with (lawMC) {
+    gotoAndStop(lawSkill);
+}
+with (magikMatterMC) {
+    gotoAndStop(magikMatterSkill);
+}
+with (magikFlowMC) {
+    gotoAndStop(magikFlowSkill);
+}
+with (magikMindMC) {
+    gotoAndStop(magikMindSkill);
+}
+with (magikEnergyMC) {
+    gotoAndStop(magikEnergySkill);
+}
+with (magikPrimeMC) {
+    gotoAndStop(magikPrimeSkill);
+}
+with (medicineMC) {
+    gotoAndStop(medicineSkill);
+}
+with (physicsMC) {
+    gotoAndStop(physicsSkill);
+}
+with (pilotMC) {
+    gotoAndStop(pilotSkill);
+}
+with (psychologyMC) {
+    gotoAndStop(psychologySkill);
+}
+with (pyroTekMC) {
+    gotoAndStop(pyroTekSkill);
+}
+with (scienceMC) {
+    gotoAndStop(scienceSkill);
+}
+with (securityMC) {
+    gotoAndStop(securitySkill);
+}
+with (sensorsMC) {
+    gotoAndStop(sensorsSkill);
+}
+with (survivalMC) {
+    gotoAndStop(survivalSkill);
+}
+with (techMC) {
+    gotoAndStop(techSkill);
+}
+with (trainMC) {
+    gotoAndStop(trainSkill);
+}

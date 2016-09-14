@@ -336,6 +336,14 @@ body#equipment #main_content {
 	font-size: 1.5em;
 }
 
+#flash_dice_roller {
+	height: 60vw;
+	margin: 1em auto;
+	width: 80vw;
+	height: calc(80vw - 20em);
+	width: calc(100vw - 20em);
+}
+
 #flash_header {
 	border: 0;
 	margin: 0 0 0 calc(50% - 300px);
@@ -350,10 +358,15 @@ body#equipment #main_content {
 	margin: 0 0 0 14rem;
 	padding: 0 1.5em 6em 2em;
 }
-#main_content *:first-child {
+#main_content > *:first-child,
+#main_content header > *:first-child {
 	margin-top: 0;
 }
 #main_content h2 {
+	text-align: center;
+}
+
+body#page_dice_rollers main {
 	text-align: center;
 }
 

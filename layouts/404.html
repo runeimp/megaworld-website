@@ -1,23 +1,11 @@
 {{ partial "header.html" . }}
-{{ `<!-- MegaWorld Theme v1 404.html -->` | safeHTML }}
-		<header id="page_header">
-			<h1><a href="/">
-				<img class="pk-svg" src="/assets/img/megaworld-banner-02_svg_1.0.svg" data-pk-svg="/assets/img/megaworld-banner-02_1024x100@2x.png" width="700" alt="MegaWorld.Info"/>
-			</a></h1>
-			<h2 class="tagline">Everything, absolutely everything!</h2>
-
-{{ partial "nav-main-mobile.html" . }}
-		</header>
-
-		<aside id="page_sidebar">
-{{ partial "nav-main-desktop.html" . }}
-{{ with .Params.sidebar }}
-			{{ . }}
-{{ end }}
-		</aside>
+		{{ `<!-- MegaWorld 404.html -->` | safeHTML }}
 
 		<main id="main_content" class="grid" role="main">
-			File not found. Please choose another page via the site navigation.
+			<header>
+				<h1>File not Found</h1>
+			</header>
+			<p>Please choose another page via the site navigation.</p>
 		</main>
 
 {{ partial "footer.html" . }}

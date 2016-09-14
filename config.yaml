@@ -48,6 +48,14 @@ params:
         src: "/menu.swf"
         width: 200
         wmode: "opaque"
+    roller:
+      flash:
+        id: "flash_dice_roller"
+        bgcolor: "#000000"
+        height: "600"
+        src: "/MegaWorld-Dice_System.swf"
+        width: "800"
+        wmode: "opaque"
 menu:
   main:
     - name: Introduction

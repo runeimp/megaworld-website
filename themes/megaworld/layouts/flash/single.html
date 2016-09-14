@@ -1,0 +1,14 @@
+{{ partial "header.html" . }}
+		{{ `<!-- MegaWorld Theme v1 flash single.html -->` | safeHTML }}
+
+		<main id="main_content" class="grid" role="main">
+			<header>
+				<h1>{{ .Title }}</h1>
+			</header>
+			
+			{{ .Content }}
+
+{{ partial "flash.html" .Site.Params.flash.roller }}
+		</main>
+
+{{ partial "footer.html" . }}

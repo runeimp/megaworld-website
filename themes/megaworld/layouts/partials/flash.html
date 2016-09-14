@@ -1,7 +1,9 @@
 <!--
 	@see https://helpx.adobe.com/flash/kb/flash-object-embed-tag-attributes.html
 -->
-			<object {{ with .flash.id }}id="{{ . }}" {{ end }} {{ with .flash.class }}class="{{ . }}" {{ end }}type="application/x-shockwave-flash" data="{{ .flash.src }}" width="{{ .flash.width }}" height="{{ .flash.height }}">
+			<object{{ with .flash.id }} id="{{ . }}"{{ end }}{{ with .flash.class }} class="{{ . }}"{{ end }} type="application/x-shockwave-flash"
+			 data="{{ .flash.src }}"
+			 width="{{ .flash.width }}" height="{{ .flash.height }}">
 				<param name="movie" value="{{ .flash.src }}" />
 {{ with .flash.allowfullscreen }}				<param name="allowfullscreen" value="{{ . }}" /><!-- true/false -->
 {{ end }}{{ with .flash.align }}				<param name="align" value="{{ . }}" /><!-- l (left), r (right), t (top), tl (top left), tr (top right) -->

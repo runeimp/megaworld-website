@@ -1,0 +1,31 @@
+#
+# MegaWorld Site Caddy Config
+#
+megaworld.online:80, *.megaworld.online:80, megaworldrpg.com:80, *.megaworldrpg.com:80, megaworld.info:80, *.megaworld.info:80 {
+	gzip
+
+	errors {
+		log ../log/error.log {
+			size 50  # Rotate after 50 MB
+			age  365 # Keep rotated files for 30 days
+			keep 100 # Keep at most 5 log files
+		}
+		404 404.html # Not Found
+		500 500.html # Internal Server Error
+	}
+	
+	header /v1/ X-MegaWorld "Version 1"
+	header / X-MegaWorld "Version 1"
+	
+	log ../log/access.log {
+		size 50  # Rotate after 50 MB
+		age  365 # Keep rotated files for 30 days
+		keep 100 # Keep at most 5 log files
+	}
+
+	minify /assets /MegaWorld.css
+
+	root /vhost/online/megaworld/www/web
+
+	search
+}

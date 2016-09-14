@@ -2,16 +2,18 @@
 # Hugo Bookshelf Example
 #
 
-hugo:
-	hugo
-
 help:
+	@echo "build        Built out the static site in the /public/ directory"
 	@echo "dev          Starts up a Hugo dev instance of the site for local development"
 	@echo "prod         Starts up a Hugo production instance of the site for local testing"
 	@echo "test         Uses HTTPie to contact the dev and test server"
 	@echo "theme-list   List all Hugo things installed"
 	@echo
 	@echo "This site was written for use with Hugo Static Site Generator v0.16"
+
+
+build:
+	hugo
 
 
 dev:

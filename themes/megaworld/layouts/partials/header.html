@@ -27,11 +27,20 @@
 	</head>
 	<body{{ with .Params.body.id }} id="{{ . }}"{{ end }}{{ with .Params.body.class }} class="{{ . }}"{{ end }}{{ with .Params.body.style }} style="{{ . }}"{{ end }}>
 		<aside id="page_sidebar">
-			<h3>Contents:</h3>
+			<header>
+				<h2>MegaWorld</h2>
+			</header>
 {{ partial "nav-main-desktop.html" . }}
 {{ with .Params.sidebar }}
 				{{ . }}
 {{ end }}
+			<form id="search" action="/search" method="GET" novalidate>
+				<fieldset>
+					<legend>Site Search</legend>
+					<input name="q" autofocus placeholder="fusion reactor..." type="text" />
+					<input type="submit" value="Go">
+				</fieldset>
+			</form>
 			{{ .Site.Copyright | safeHTML }}
 		</aside>
 

@@ -2,6 +2,10 @@
 date = "2016-09-09T00:00:00-07:00"
 draft = false
 title = "Character Skills"
+
+[body]
+	id = "page_character"
+	class = "skills"
 +++
 
 Next we have your characters _Skills_ and _Skill Groups_. There are five Skill Groups, [Athletic Skills][], [Combat Skills][], [Logic Skills][], [Intra-Personal][], [Knowledge Skills][], [Language Skills][], [Magic Skills][], [Music Skills][], [Naturalist Skills][], [Science Skills][], [Social Skills][], and [Spatial Skills][]. Skills are rated from 1 to 5. Skills cost is 1 <abbr title="Character Point">CP</abbr> for each Skill Level during Character Creation. You may also buy Specializations. And in fact must for any Skill rated higher than a 3. Specializations cost 2 points each. Multiple Specializations may be bought for each Skill. No Skill may be higher than a 3 unless there is at least 1 Specialization. But even after that a starting character may not have a Skill higher than a 4. During character creation all skill groups should be written down. If not using a Racial Template the starting value of a given skill group is 2. Then you may move points between Skill Groups. If using a Racial Template then you may assign 5 additional points between any of the Skill Groups. No Skill Group may be lower than a 1 or higher than a 4.

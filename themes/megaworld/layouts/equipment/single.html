@@ -8,18 +8,14 @@
 			
 			{{ .Content }}
 
-			<h3>Melee Weapons</h3>
-{{ $data := getCSV "," "static/equipment/weapons-melee.head.csv" }}
-{{ partial "table-csv.html" $data }}
+{{ range .Params.tables }}
+			<h3>{{ .title }}</h3>{{ $data := getCSV "," .url }}
+{{ partial "table-csv.html" $data }}{{ end }}
 
-			<h3>Missile Weapons</h3>
-{{ $data := getCSV "," "static/equipment/weapons-missile.head.csv" }}
-{{ partial "table-csv.html" $data }}
-
-{{ with .Site.Data.combat.equipment.links }}
+{{ with .Params.ref_links }}
 			<h3>Reference List</h3>
 			<ul>
-{{ range sort . }}
+{{ range . }}
 				<li><a href="{{ .url }}">{{ .name }}</a></li>{{ end }}
 			</ul>{{ end }}
 		</main>

@@ -6,6 +6,20 @@ title = "Equipment - Weapons"
 [body]
 	id = "page_equipment"
 	class = "weapons"
+
+[[ref_links]]
+	name = "Sling - Wikipedia"
+    url = "https://en.wikipedia.org/wiki/Sling_(weapon)"
+[[ref_links]]
+  	name = "Composite Bow - Wikipedia"
+    url = "https://en.wikipedia.org/wiki/Composite_bow"
+
+[[tables]]
+	title = "Melee Weapons"
+	url = "static/equipment/weapons-melee.head.csv"
+[[tables]]
+	title = "Missile Weapons"
+	url = "static/equipment/weapons-missile.head.csv"
 +++
 
 <abbr title="Base Damage">BD</abbr> is <abbr title="Biuld">BLD</abbr> + ½ <abbr title="Reflexes">REF</abbr>.

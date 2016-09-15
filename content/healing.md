@@ -2,6 +2,10 @@
 date = "2016-09-11T00:00:00-07:00"
 draft = false
 title = "Healing"
+
+[body]
+  id = "page_healing"
+  class = "healing"
 +++
 
 "Exceptional Damage" is damage equal to the BLD of the victim & if done to a limb renders that limb useless.

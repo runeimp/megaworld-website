@@ -16,6 +16,10 @@ acronym[title] {
 	text-decoration: dotted underline;
 }
 
+aside > header > h2 {
+	text-align: center;
+}
+
 aside > nav > ul li {
 	/*font-family: Play, sans-serif;*/
 	font-size: 1.3rem;
@@ -404,5 +408,39 @@ body#page_dice_rollers main {
 #page_sidebar h3 {
 	margin: .5em 0;
 	padding: 0;
+}
+
+#search {
+	margin: 1em 0;
+	width: 100%;
+}
+aside > #search {
+	margin: 1em 0 2em 0;
+}
+
+#search fieldset {
+	background: transparent;
+	background-color: rgba(0, 0, 0, .15);
+	border: .15em solid #AAA;
+	border-radius: .69em;
+}
+#search fieldset legend {
+	/*border: .01em solid lime;*/
+	color: #DDD;
+}
+#search fieldset input[type=text] {
+	background: transparent;
+	border: 0;
+	color: #FFF;
+	width: auto;
+}
+#search fieldset input[type=submit] {
+	background: #000;
+	border: 0;
+	border-radius: .6em;
+	color: #FFF;
+	font-size: .5em;
+	margin: 0;
+	/*padding: .2em .5em;*/
 }
 

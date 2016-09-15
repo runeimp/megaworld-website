@@ -2,6 +2,10 @@
 date = "2016-09-09T00:00:00-07:00"
 draft = false
 title = "Arbitration System"
+
+[body]
+  id = "page_system"
+  class = "system"
 +++
 
 In the MegaWorld system, characters are based on 5 _Primary Attributes_ and up to 40 _Skills_ which may or may not include several _Specializations_. All rolls in this system use standard 6 sided dice (D6). The Primary Attribute is used to	determines how many D6 are used in a given roll. For _each_ die six (D6) rolled that scores greater than the TN (_Task Number_) minus your skill modifier you get 1 _Success_. Each D6 that rolls a 6 is counted as a Success and is also _Rerolled_ (to try for more Successes and Rerolls).  A 0 total is	considered a _failure_ and **GOD** (the Game Operations Director) should use his/her imagination when this happens. <tt>:)</tt>

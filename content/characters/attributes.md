@@ -2,6 +2,10 @@
 date = "2016-09-09T00:00:00-07:00"
 draft = false
 title = "Character Attributes"
+
+[body]
+	id = "page_character"
+	class = "attributes"
 +++
 
 In the MegaWorld System there 5 _Primary Attributes_ and 3 _Secondary Attributes_ which are derived from the primary attributes.

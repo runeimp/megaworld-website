@@ -1,5 +1,12 @@
-About MegaWorld
-===============
+---
+date: "2016-09-14T21:00:00-07:00"
+draft: false
+title: "About MegaWorld"
+
+body:
+  id: "page_about"
+  class: "about"
+---
 
 MegaWord was a pen and paper <abbr title="Roleplaying Game">RPG</abbr> concept I had back in the early 1990's. I greatly enjoyed playing <abbr title="Dungeons &amp; Dragons">[Dungeons & Dragons][D&D]</abbr> (original and 2nd Edition), [Marvel Super Heroes][], [Star Wars: The Roleplaying Game][], [Cyberpunk 2020][], [GURPS][], [Justifiers RPG][]
 

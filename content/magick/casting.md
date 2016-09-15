@@ -5,7 +5,7 @@ title = "Magick Casting"
 type = "grimoire"
 
 [body]
-	id = "magick"
+	id = "page_magick"
 	class= "casting"
 +++
 

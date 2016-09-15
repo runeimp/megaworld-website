@@ -4,8 +4,10 @@
 
 help:
 	@echo "build        Built out the static site in the /public/ directory"
+	@echo "clean        Delete the public directory and Caddy search cache"
 	@echo "dev          Starts up a Hugo dev instance of the site for local development"
 	@echo "prod         Starts up a Hugo production instance of the site for local testing"
+	@echo "publish      Build site and push files to the production server"
 	@echo "test         Uses HTTPie to contact the dev and test server"
 	@echo "theme-list   List all Hugo things installed"
 	@echo
@@ -13,13 +15,27 @@ help:
 
 
 build:
+	@term-wipe
 	hugo
+
+
+clean:
+	@term-wipe
+	rm -rf public
+	rm -rf /tmp/caddyIndex
 
 
 dev:
 	@term-wipe
 	@# hugo server --buildDrafts --watch --ignoreCache --theme=purehugo --verbose
 	hugo server --buildDrafts --verbose
+
+
+publish:
+	@term-wipe
+	hugo
+	find public -name .DS_Store -delete
+	scp -r public/* root@megaworld.online:/vhost/online/megaworld/www/web
 
 
 prod:

@@ -2,6 +2,10 @@
 date = "2016-09-11T00:00:00-07:00"
 draft = false
 title = "History"
+
+[body]
+  id = "page_history"
+  class = "history"
 +++
 
 March 3<span>rd</span> 2040

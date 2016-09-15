@@ -6,7 +6,7 @@ languageCode: "en-us"
 theme: "megaworld"
 title: "MegaWorld"
 copyright: '<p class="copyright">The MegaWorld RPG is<br>Copyright &copy; 1995, 2016<br>Mark Preston Gardner<br>AKA RuneImp</p>'
-
+enableRobotsTXT: true
 
 blackfriday:
   latexDashes: false

@@ -2,6 +2,10 @@
 date = "2016-09-06T21:00:00-07:00"
 draft = false
 title = "Magick"
+
+[body]
+	id = "page_magick"
+	class = "magick"
 +++
 
 Thoughts

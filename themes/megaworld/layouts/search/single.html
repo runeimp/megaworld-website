@@ -1,0 +1,22 @@
+{{ partial "header.html" . }}
+		{{ `<!-- MegaWorld Theme v1 search single.html -->` | safeHTML }}
+
+		<main id="main_content" class="grid" role="main">
+			<header>
+				<h1>{{ .Title }}</h1>
+			</header>
+
+			<p>
+				Query: {{ `<code>{{ .Query }}</code>` | safeHTML }}
+			</p>
+
+			<hr>
+
+			{{ `<ul class="search results">{{ range .Results }}` | safeHTML }}
+				{{ `<li><h4><a href="{{ .Path }}">{{ .Title }}</a></h4>` | safeHTML }}
+					{{ `{{ .Body | html }}` | safeHTML }}
+				{{ `</li>{{ end }}` | safeHTML }}
+			</ul>
+		</main>
+
+{{ partial "footer.html" . }}

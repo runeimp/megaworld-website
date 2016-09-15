@@ -2,6 +2,10 @@
 date = "2016-09-11T00:00:00-07:00"
 draft = false
 title = "Character Tech Level"
+
+[body]
+	id = "page_character"
+	class = "tech-level"
 +++
 
 ### Level 0: (Age of Suckyness)

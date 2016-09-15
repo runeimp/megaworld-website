@@ -1,5 +1,5 @@
-MegaWorld v1
-============
+MegaWorld v1.2.0
+================
 
 How This All Began
 ------------------
